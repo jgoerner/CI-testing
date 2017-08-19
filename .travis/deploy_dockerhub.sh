@@ -5,6 +5,6 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
 	TAG="$TRAVIS_BRANCH"
 fi
-TRAVIS_REPO_SLUG_LOWERCASE=$(echo $TRAVIS_REPO_SLUG | tr '[:upper:]' '[:lower:]')
-docker build -f Dockerfile -t $TRAVIS_REPO_SLUG_LOWERCASE:$TAG .
-docker push $TRAVIS_REPO_SLUG_LOWERCASE
+IMAGE_TAG="jgoerner/sentences" #hardcoded since renaming while in process
+docker build -f Dockerfile -t $IMAGE_TAG:$TAG .
+docker push $IMAGE_TAG
