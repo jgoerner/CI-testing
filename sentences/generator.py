@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import random
 
-NOUNS = ("I", "You", "They", "All Dutch")
+NOUNS = ("I", "You", "They", "Dutch")
 VERBS = ("like", "hate", "obey", "enjoy")
 OBJECTS = ("Oreos", "Python", "Soccer", "Coffee")
 
